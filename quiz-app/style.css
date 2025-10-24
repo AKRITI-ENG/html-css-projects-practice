@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(41, 41, 91);
+    min-height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+}
+
+.quiz-container{
+    overflow: hidden;
+    border-radius: 10px;
+    width: 100%;
+    background-color: gainsboro;
+    max-width: 600px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    height: 80%;
+    margin-top: 100px;
+    
+}
+.quiz-header{
+    padding: 4rem;
+}
+h3{
+    margin: 0 0 2rem 0;
+    text-align: center;
+    color: #333;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;  
+}
+ul li{
+    font-size: 1.2rem;
+    margin: 1rem 0;  
+}
+ul li label{
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 2px;
+    background-color: rgb(126, 112, 112);
+    display: flex;
+    border-radius: 8px;
+    align-items: center;
+    transition: all 0.3s ease;
+ 
+}
+
+ul li label:hover {
+    background-color: #d0d0d0;
+    transform: translateX(5px);
+}
+input[type="radio"] {
+    margin-right: 1rem;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    accent-color: rgb(41, 41, 91);
+    flex-shrink: 0;
+}
+        
+input[type="radio"]:checked + span {
+    font-weight: bold;
+}
+
+ul li label:has(input:checked) {
+    background-color: #b8b8d8;
+    border: 2px solid rgb(41, 41, 91);
+}
+button{
+    background-color:blue;
+    color: white;
+    border: none;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+}
+
+
+button:hover{
+    background-color: darkblue;
+    transform: translateX(5px);
+}
+button:focus{
+    outline: none;
+   
+}
+button:active{
+    transform: scale(0.98);
+}
