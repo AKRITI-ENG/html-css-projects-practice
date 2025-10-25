@@ -15,7 +15,7 @@ body{
 }
 .container{
     display: flex;
-    width: 100vh;
+    width: 70vw;
     gap: 20px;
 }
 .panel{
@@ -78,6 +78,7 @@ body{
     opacity: 1;
     letter-spacing: 2px;
     line-height: 1.3;
+    overflow: hidden;
 
 }
 @media (max-width: 480px) {
